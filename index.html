@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home Progress</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    body {
+      background: #f5f7fb;
+      color: #111827;
+      padding: 20px;
+    }
+
+    .app {
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    .header {
+      margin-bottom: 24px;
+    }
+
+    .header h1 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .header p {
+      color: #6b7280;
+      font-size: 15px;
+    }
+
+    .summary-card {
+      background: white;
+      border-radius: 20px;
+      padding: 18px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+      margin-bottom: 20px;
+    }
+
+    .summary-card h2 {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .summary-stats {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .stat {
+      flex: 1;
+      background: #f8fafc;
+      border-radius: 14px;
+      padding: 14px;
+      text-align: center;
+    }
+
+    .stat-number {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .stat-label {
+      font-size: 12px;
+      color: #6b7280;
+    }
+
+    .section-title {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+
+    .spot-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    .spot-card {
+      background: white;
+      border-radius: 20px;
+      padding: 18px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+    }
+
+    .spot-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    .spot-name {
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .badge {
+      font-size: 12px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: #e5e7eb;
+      color: #374151;
+    }
+
+    .badge.good {
+      background: #dcfce7;
+      color: #166534;
+    }
+
+    .spot-date {
+      font-size: 13px;
+      color: #6b7280;
+      margin-bottom: 14px;
+    }
+
+    .spot-note {
+      font-size: 14px;
+      color: #374151;
+      margin-bottom: 16px;
+      line-height: 1.4;
+    }
+
+    .spot-button {
+      width: 100%;
+      border: none;
+      background: #2563eb;
+      color: white;
+      padding: 14px;
+      border-radius: 14px;
+      font-size: 15px;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <div class="header">
+      <h1>Home Progress</h1>
+      <p>Track each space one day at a time</p>
+    </div>
+
+    <div class="summary-card">
+      <h2>Overview</h2>
+      <div class="summary-stats">
+        <div class="stat">
+          <div class="stat-number">2</div>
+          <div class="stat-label">Updated Today</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">5</div>
+          <div class="stat-label">Tracked Spots</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">4</div>
+          <div class="stat-label">Day Streak</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-title">Tracked Spots</div>
+
+    <div class="spot-list">
+      <div class="spot-card">
+        <div class="spot-top">
+          <div class="spot-name">Kitchen Counter</div>
+          <div class="badge good">Improving</div>
+        </div>
+        <div class="spot-date">Last updated: Today</div>
+        <div class="spot-note">Wiped down the left side and cleared a few items.</div>
+        <button class="spot-button">Open Spot</button>
+      </div>
+
+      <div class="spot-card">
+        <div class="spot-top">
+          <div class="spot-name">Bathroom Sink</div>
+          <div class="badge">Same</div>
+        </div>
+        <div class="spot-date">Last updated: Yesterday</div>
+        <div class="spot-note">Still needs work, but surface is a little clearer.</div>
+        <button class="spot-button">Open Spot</button>
+      </div>
+
+      <div class="spot-card">
+        <div class="spot-top">
+          <div class="spot-name">Living Room Floor</div>
+          <div class="badge">Needs Work</div>
+        </div>
+        <div class="spot-date">Last updated: 2 days ago</div>
+        <div class="spot-note">A few things were picked up, but clutter is still building.</div>
+        <button class="spot-button">Open Spot</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
